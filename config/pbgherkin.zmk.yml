@@ -1,0 +1,8 @@
+file_format: "1"
+id: pbgherkin
+name: PB Gherkin
+type: shield
+url: https://www.40percent.club/2019/10/pb-gherkin.html
+requires: [pro_micro]
+features:
+  - keys
