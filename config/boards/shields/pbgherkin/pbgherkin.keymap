@@ -124,14 +124,6 @@
             combo_zmout { timeout-ms = <50>; key-positions = < 6  7>; bindings = <&kp ZOOMOUT>;     layers = <RAISE>; };
             combo_zmin  { timeout-ms = <50>; key-positions = < 7  8>; bindings = <&kp ZOOMIN>;      layers = <RAISE>; };
 
-// Media (Horizontal Combos)
-// -------------------------------------------------------------
-// |     |     |     |     |     |     |     |     |     |     |
-// |     |     |     |<- Next  ->|     |     |     |     |     |
-// |     |     |     |     |     |     |     |     |     |     |
-// -------------------------------------------------------------
-            combo_next  { timeout-ms = <50>; key-positions = <13 14>; bindings = <&kp C_NEXT>;  layers = <MEDIA>; };
-
 
 // Bluetooth & RGB (Horizontal Combos)
 // -------------------------------------------------------------
