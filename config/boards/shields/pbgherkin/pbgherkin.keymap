@@ -90,11 +90,11 @@
 // |     |     |     |<-   V   ->|<-   K   ->|     |     |     |
 // |     |<-  Tab  ->|<- Bkspc ->|<- Space ->|<- Enter ->|     |
 // -------------------------------------------------------------
-            combo_esc   { timeout-ms = <50>; key-positions = < 1  2>; bindings = <&kp ESC>;   layers = <BASE QWRTY HNSDN SYMBL>; };
-            combo_tab   { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp TAB>;   layers = <BASE QWRTY HNSDN SYMBL>; };
-            combo_bspc  { timeout-ms = <50>; key-positions = <23 24>; bindings = <&kp BSPC>;  layers = <BASE QWRTY HNSDN SYMBL>; };
-            combo_space { timeout-ms = <50>; key-positions = <25 26>; bindings = <&kp SPACE>; layers = <BASE QWRTY HNSDN SYMBL>; };
-            combo_enter { timeout-ms = <50>; key-positions = <27 28>; bindings = <&kp ENTER>; layers = <BASE QWRTY HNSDN SYMBL>; };
+            combo_esc   { timeout-ms = <50>; key-positions = < 1  2>; bindings = <&kp ESC>;   layers = <BASE SYMBL>; };
+            combo_tab   { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp TAB>;   layers = <BASE SYMBL>; };
+            combo_bspc  { timeout-ms = <50>; key-positions = <23 24>; bindings = <&kp BSPC>;  layers = <BASE SYMBL>; };
+            combo_space { timeout-ms = <50>; key-positions = <25 26>; bindings = <&kp SPACE>; layers = <BASE SYMBL>; };
+            combo_enter { timeout-ms = <50>; key-positions = <27 28>; bindings = <&kp ENTER>; layers = <BASE SYMBL>; };
             combo_v     { timeout-ms = <50>; key-positions = <13 14>; bindings = <&kp V>;     layers = <BASE>; };
             combo_k     { timeout-ms = <50>; key-positions = <15 16>; bindings = <&kp K>;     layers = <BASE>; };
 
