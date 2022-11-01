@@ -25,7 +25,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+        zmk,matrix_transform = &orientation2_transform;
     };
 
     /* orientation 0 */
