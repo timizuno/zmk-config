@@ -11,11 +11,10 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
-#define BASE  0     // alphas (Colemak-DH)
+#define BASE  0     // alphas (Colemak)
 #define SYMBL 1     // symbols
 #define LOWER 2     // number row & functions
 #define RAISE 3     // keypad & navigation
-#define MEDIA 4     // multimedia & functions2
 #define ADJST 5     // bluetooth
 
 // Special keys
@@ -223,7 +222,7 @@
         adjust_layer {
 // -------------------------------------------------------------
 // |Bri+ |     |     |     |Toggl|BTClr| BT0 | BT1 | BT2 | BT3 |
-// |Bri- |     |     |     |     |     |Colmk|     |     |     |
+// |Bri- |     |     |     |     |     |     |     |     |     |
 // | USB | BLE |     | *** |     |     | *** |     |Reset|BootL|
 // -------------------------------------------------------------
             bindings = <
