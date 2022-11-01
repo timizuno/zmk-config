@@ -165,13 +165,13 @@
 
         adjust_layer {
 // -------------------------------------------------------------
-// |Bri+ |     |     |     |Toggl|BTClr| BT0 | BT1 | BT2 | BT3 |
-// |Bri- |     |     |     |     |     |     |     |     |     |
+// |     |     |     |     |     |BTClr| BT0 | BT1 | BT2 | BT3 |
+// |     |     |     |     |     |     |     |     |     |     |
 // | USB | BLE |     | *** |     |     | *** |     |Reset|BootL|
 // -------------------------------------------------------------
             bindings = <
-    &bl BL_INC   &none        &none   &none   &bl BL_TOG &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
-    &bl BL_DEC   &none        &none   &none   &none      &none      &none     &none    &none    &none
+    &none        &none        &none   &none   &none      &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
+    &none        &none        &none   &none   &none      &none      &none     &none    &none    &none
     &out OUT_USB &out OUT_BLE &none   &trans  &none      &none      &trans       &none        &reset       &bootloader
             >;
 
