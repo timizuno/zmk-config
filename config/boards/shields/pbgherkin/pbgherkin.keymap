@@ -15,7 +15,7 @@
 #define SYMBL 1     // symbols
 #define LOWER 2     // number row & functions
 #define RAISE 3     // keypad & navigation
-#define ADJST 5     // bluetooth
+#define ADJST 4     // bluetooth
 
 // Special keys
 #define ZOOMOUT      LA(LG(MINUS))
@@ -85,17 +85,14 @@
 
 // Colemak (Horizontal Combos)
 // -------------------------------------------------------------
-// |     |<-  Esc  ->|     |     |     |     |     |     |     |
-// |     |     |     |<-   V   ->|<-   K   ->|     |     |     |
-// |     |<-  Tab  ->|<- Bkspc ->|<- Space ->|<- Enter ->|     |
+// |     |<-  Tab  ->|     |     |     |     |     |     |     |
+// |     |     |     |     |     |     |     |     |     |     |
+// |     |     |<- Bkspc ->|     |     |<- Enter ->|     |     |
 // -------------------------------------------------------------
-            combo_esc   { timeout-ms = <50>; key-positions = < 1  2>; bindings = <&kp ESC>;   layers = <BASE SYMBL>; };
-            combo_tab   { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp TAB>;   layers = <BASE SYMBL>; };
-            combo_bspc  { timeout-ms = <50>; key-positions = <23 24>; bindings = <&kp BSPC>;  layers = <BASE SYMBL>; };
-            combo_space { timeout-ms = <50>; key-positions = <25 26>; bindings = <&kp SPACE>; layers = <BASE SYMBL>; };
-            combo_enter { timeout-ms = <50>; key-positions = <27 28>; bindings = <&kp ENTER>; layers = <BASE SYMBL>; };
-            combo_v     { timeout-ms = <50>; key-positions = <13 14>; bindings = <&kp V>;     layers = <BASE>; };
-            combo_k     { timeout-ms = <50>; key-positions = <15 16>; bindings = <&kp K>;     layers = <BASE>; };
+            combo_esc   { timeout-ms = <50>; key-positions = < 0  1>; bindings = <&kp ESC>;   layers = <BASE SYMBL>; };
+            combo_tab   { timeout-ms = <50>; key-positions = < 1  2>; bindings = <&kp TAB>;   layers = <BASE SYMBL>; };
+            combo_bspc  { timeout-ms = <50>; key-positions = <22 23>; bindings = <&kp BSPC>;  layers = <BASE SYMBL>; };
+            combo_enter { timeout-ms = <50>; key-positions = <26 27>; bindings = <&kp ENTER>; layers = <BASE SYMBL>; };
 
 
 // Symbols (Horizontal Combos)
@@ -166,12 +163,12 @@
 // -------------------------------------------------------------
 // |  Q  |  W  |  F  |  P  |  G  |  J  |  L  |  U  |  Y  |  ;  |
 // |  A  |  R  |  S  |  T  |  D  |  H  |  N  |  E  |  I  |  O  |
-// |  Z  |  X  |  C  |  D  |BkSpc|Space|  B  |  K  |  M  |Enter|
+// |  Z  |  X  |  C  |  D  |Space|Enter|  B  |  K  |  M  |Enter|
 // -------------------------------------------------------------
             bindings = < 
     &kp Q       &kp W       &kp F       &kp P       &kp G         &kp J           &kp L       &kp U       &kp Y       &kp SEMI
     &hm LCTRL A &hm LALT R  &hm LGUI S  &hm LSFT T  &kp D         &kp H           &hm RSFT N  &hm RGUI E  &hm RALT I  &hm RCTRL O
-    &kp Z       &kp X       &kp C       &lt LOWER V &mt LSFT BSPC &th SYMBL SPACE &lt RAISE B &kp K   &kp M     &kp RET
+    &kp Z       &kp X       &kp C       &lt LOWER V &mt LSFT SPACE &th SYMBL RET &lt RAISE B &kp K   &kp M     &hm LSFT RET
             >;
         } ;
 
