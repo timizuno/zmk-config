@@ -10,6 +10,8 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
+#include <dt-bindings/zmk/ext_power.h>
+
 
 #define BASE  0     // alphas (Colemak)
 #define MEDIA 1     // media control
@@ -155,12 +157,12 @@
         adjust_layer {
 // -------------------------------------------------------------
 // |BTClr|  A  |     |     |     |     | BT0 | BT1 |     |     |
-// |     |     |     |     |     |BtPrv|BtNxt|     |     |     |
+// |     |     |     |     |     |PwOff|PwOn |     |     |     |
 // | USB | BLE |     | *** |     |     | *** |     |Reset|BootL|
 // -------------------------------------------------------------
             bindings = <
     &bt BT_CLR      &kp A     &none   &none   &none      &none  &bt BT_SEL 0 &bt BT_SEL 1     &none        &none
-    &none        &none        &none   &none   &none      &bt BT_PRV &bt BT_NXT   &none        &none        &none
+    &none        &none        &none   &none   &none      &ext_power EP_OFF &ext_power EP_ON   &none        &none        &none
     &out OUT_USB &out OUT_BLE &none   &trans  &none      &none      &trans       &none        &reset       &bootloader
             >;
 
