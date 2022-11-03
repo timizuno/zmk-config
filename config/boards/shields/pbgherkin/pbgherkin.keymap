@@ -100,14 +100,14 @@
 // -------------------------------------------------------------
 // Colemak
 // -------------------------------------------------------------
-// |  Q  |  W  |  F  |  P  |  G  |  J  |  L  |  U  |  Y  |  ;  |
+// |  Q  |  W  |  F  |  P  |  G  |  J  |  L  |  U  |  Y  |BckSp|
 // |  A  |  R  |  S  |  T  |  D  |  H  |  N  |  E  |  I  |  O  |
-// |  Z  |  X  |  C  |  D  |BckSp|Space|  B  |  K  |  M  |Enter|
+// |  Z  |  X  |  C  |  D  |Space|Enter|  B  |  K  |  M  |Enter|
 // -------------------------------------------------------------
             bindings = < 
-    &kp Q       &kp W       &kp F       &kp P       &kp G         &kp J           &kp L       &kp U  &kp Y       &kp SEMI
+    &kp Q       &kp W       &kp F       &kp P       &kp G         &kp J           &kp L       &kp U  &kp Y       &kp BSPC
     &hm LCTRL A &hm LALT R  &hm LGUI S  &kp T       &kp D         &kp H           &kp N  &hm RGUI E  &hm RALT I  &hm RCTRL O
-    &hm LSFT Z  &kp X       &mt LGUI C  &lt LOWER V &mt LSFT BSPC &th MEDIA SPACE &lt RAISE B &kp K  &kp M       &hm LSFT RET
+    &th LSFT Z  &kp X       &mt LGUI C  &lt LOWER V &th LSFT SPACE &th MEDIA RET &lt RAISE B &kp K   &kp M       &th RSFT RET
             >;
         } ;
 
@@ -130,13 +130,13 @@
 // symbols
 // -------------------------------------------------------------
 // |  !  |  @  |  #  |  $  |  %  |  ˆ  |  &  |  *  |  [  |  ]  |
-// |CAPS |  \  |  -  |  =  |  +  |     |  (  |  )  |     |  '  |
-// |SHIFT|  |  |  _  | *** |     |     |  ,  |  .  |  /  |SHIFT|
+// |CAPS |  \  |  -  |  =  |  +  |  ;  |  (  |  )  |  ;  |  '  |
+// |SHIFT|  |  |  _  | *** |     |     |ADJST|  ,  |  .  |  /  |
 // -------------------------------------------------------------
             bindings = <
     &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp CARET    &kp AMPS    &kp STAR     &kp LBKT     &kp RBKT
-    &kp CAPS     &kp BSLH     &kp MINUS    &kp EQUAL    &kp PLUS     &trans       &kp LPAR    &kp RPAR     &trans       &kp SQT 
-    &kp LSHFT    &kp PIPE     &kp UNDER    &trans       &trans       &trans       &lt ADJST COMMA &kp DOT  &kp FSLH     &kp LSHFT 
+    &kp CAPS     &kp BSLH     &kp MINUS    &kp EQUAL    &kp PLUS     &kp SEMI     &kp LPAR    &kp RPAR     &kp SEMI     &kp SQT 
+    &kp LSHFT    &kp PIPE     &kp UNDER    &trans       &trans       &trans       &mo ADJST   &kp COMMA    &kp DOT      &kp FSLH 
             >;
         };
 
@@ -149,7 +149,7 @@
 // -------------------------------------------------------------
             bindings = <
     &kp N1    &kp N2    &kp N3    &kp N4     &kp N5  &kp N6   &kp N7      &kp N8     &kp N9    &kp N0
-    &trans    &kp CARET &kp CARET &kp TILDE  &trans  &trans   &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT
+    &trans    &kp CARET &kp SQT   &kp TILDE  &trans  &trans   &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT
     &trans    &trans    &kp GRAVE &mo ADJST  &trans  &trans   &trans      &trans     &trans    &trans
             >;
         };
