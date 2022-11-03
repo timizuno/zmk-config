@@ -107,7 +107,7 @@
             bindings = < 
     &kp Q       &kp W       &kp F       &kp P       &kp G         &kp J           &kp L       &kp U  &kp Y       &kp SEMI 
     &hm LCTRL A &hm LALT R  &hm LGUI S  &kp T       &kp D         &kp H           &kp N  &hm RGUI E  &hm RALT I  &hm RCTRL O
-    &hm LSFT Z  &kp X       &mt LGUI C  &lt LOWER V &th LSFT BSPC &th MEDIA SPACE &lt RAISE B &kp K   &kp M       &hm RSFT RET
+    &mt LSFT Z  &kp X       &mt LGUI C  &lt LOWER V &mt LSFT BSPC &th MEDIA SPACE &lt RAISE B &kp K   &kp M      &mt RSFT RET
             >;
         } ;
 
