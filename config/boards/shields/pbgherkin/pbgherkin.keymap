@@ -100,14 +100,14 @@
 // -------------------------------------------------------------
 // Colemak
 // -------------------------------------------------------------
-// |  Q  |  W  |  F  |  P  |  G  |  J  |  L  |  U  |  Y  |BckSp|
+// |  Q  |  W  |  F  |  P  |  G  |  J  |  L  |  U  |  Y  |  ;  |
 // |  A  |  R  |  S  |  T  |  D  |  H  |  N  |  E  |  I  |  O  |
-// |  Z  |  X  |  C  |  D  |Space|Enter|  B  |  K  |  M  |Enter|
+// |  Z  |  X  |  C  |  D  |BckSp|Space|  B  |  K  |  M  |Enter|
 // -------------------------------------------------------------
             bindings = < 
-    &kp Q       &kp W       &kp F       &kp P       &kp G         &kp J           &kp L       &kp U  &kp Y       &kp BSPC
+    &kp Q       &kp W       &kp F       &kp P       &kp G         &kp J           &kp L       &kp U  &kp Y       &kp SEMI 
     &hm LCTRL A &hm LALT R  &hm LGUI S  &kp T       &kp D         &kp H           &kp N  &hm RGUI E  &hm RALT I  &hm RCTRL O
-    &th LSFT Z  &kp X       &mt LGUI C  &lt LOWER V &th LSFT SPACE &th MEDIA RET &lt RAISE B &kp K   &kp M       &th RSFT RET
+    &th LSFT Z  &kp X       &mt LGUI C  &lt LOWER V &th LSFT BSPC &th MEDIA SPACE &lt RAISE B &kp K   &kp M       &th RSFT RET
             >;
         } ;
 
