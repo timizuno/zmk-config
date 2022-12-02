@@ -84,7 +84,7 @@
             combo_tab   { timeout-ms = <50>; key-positions = < 1  2>; bindings = <&kp TAB>;   layers = <BASE MEDIA LOWER RAISE>; };
             combo_bspc  { timeout-ms = <50>; key-positions = <22 23>; bindings = <&kp BSPC>;  layers = <BASE MEDIA LOWER RAISE>; };
             combo_enter { timeout-ms = <50>; key-positions = <26 27>; bindings = <&kp ENTER>; layers = <BASE MEDIA LOWER RAISE>; };
-            combo_blt_clear { timeout-ms = <50>; key-positions = <8 9>; bindings = <&bt BT_CLR>; layers = <ADJST; };
+            combo_blt_clear { timeout-ms = <50>; key-positions = <8 9>; bindings = <&bt BT_CLR>; layers = <ADJST>; };
 
         };
     };
