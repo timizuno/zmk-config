@@ -146,12 +146,12 @@
 // -------------------------------------------------------------
 // |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |
 // |     |     |  `  |  ˜  | DEL |HOME |Left |Down | Up  |Right|
-// |     |     |     | ADJ | INS |     | *** |PG_DN|PG_UP|END  |
+// |     |     | INS | ADJ |     |     | *** |PG_DN|PG_UP|END  |
 // -------------------------------------------------------------
             bindings = <
     &kp N1    &kp N2    &kp N3    &kp N4     &kp N5   &kp N6   &kp N7    &kp N8     &kp N9    &kp N0
     &trans    &trans    &kp GRAVE &kp TILDE  &kp DEL  &kp HOME &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT
-    &trans    &trans    &trans    &mo ADJST  &kp INS  &trans   &trans    &kp PG_DN  &kp PG_UP &kp END
+    &trans    &trans    &kp INS    &mo ADJST  &trans  &trans   &trans    &kp PG_DN  &kp PG_UP &kp END
             >;
         };
 
