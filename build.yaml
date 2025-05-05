@@ -11,9 +11,9 @@
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
-
+---
 include:
   - board: nice_nano_v2
-     shield: pbgherkin
+    shield: pbgherkin
   - board: nice_nano_v2
-     shield: settings_reset
+    shield: settings_reset
